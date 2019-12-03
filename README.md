@@ -5,4 +5,4 @@ stickers.txt - 722 animated sticker ID
 
 stickers.sqlite - 838 animated sticker ID
 
-Bot link - https://tele.gs/papastickersbot
+Bot link - https://tggm.ga/papastickersbot
