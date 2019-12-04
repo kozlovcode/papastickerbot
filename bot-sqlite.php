@@ -35,5 +35,7 @@ file_get_contents(API.'sendSticker?'.http_build_query($data));
 
 // Save Sticker ID to sqlite database
 if (isset($result->message->sticker->file_id)){
-	R::exec('INSERT OR IGNORE INTO list VALUES (null,"'.$result->message->sticker->file_id.'")');
+	if ($result->message->sticker->is_animated == true) {
+		R::exec('INSERT OR IGNORE INTO list VALUES (null,"'.$result->message->sticker->file_id.'")');
+	}
 }
